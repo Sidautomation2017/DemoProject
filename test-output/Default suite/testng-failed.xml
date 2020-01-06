@@ -6,7 +6,7 @@
       <class name="com.pkg.runner.GetMerit">
         <methods>
           <include name="beforeTest"/>
-          <include name="getSearchResult" invocation-numbers="0 1 2 3 4"/>
+          <include name="getSearchResult"/>
           <include name="afterTest"/>
         </methods>
       </class> <!-- com.pkg.runner.GetMerit -->

@@ -11,7 +11,7 @@ import org.apache.poi.xssf.usermodel.XSSFSheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 
 public class ExcelReader {
-	 String inputpath=FileWritter.getDesktopPath();
+	 String inputpath=System.getProperty("user.dir")+"\\resources\\TestData\\";	
 	 String filename="UserID.xlsx";
 	 XSSFWorkbook workbook;
 	 XSSFSheet sheet;

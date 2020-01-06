@@ -9,8 +9,8 @@ import org.apache.poi.openxml4j.exceptions.InvalidFormatException;
 
 
 public class FileWritter {
-	//static String inputpath="C:\\Users\\Sidheshwar.Tondare\\workspace\\Merit_Search\\resources\\TestData\\";
-	static String inputpath=FileWritter.getDesktopPath();
+	static String inputpath=System.getProperty("user.dir")+"\\resources\\TestData\\";	;
+	//static String inputpath=FileWritter.getDesktopPath();
 	 static String filename="AllResult.csv";
 	static String filename1="AllResult.txt";
 	
