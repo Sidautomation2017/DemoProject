@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="5" passed="5">
+<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="25018" started-at="2020-01-06T10:33:21Z" finished-at="2020-01-06T10:33:46Z">
+  <suite started-at="2020-01-08T09:55:23Z" name="Default suite" finished-at="2020-01-08T09:56:05Z" duration-ms="42330">
     <groups>
     </groups>
-    <test name="Test" duration-ms="25018" started-at="2020-01-06T10:33:21Z" finished-at="2020-01-06T10:33:46Z">
+    <test started-at="2020-01-08T09:55:23Z" name="Default test" finished-at="2020-01-08T09:56:05Z" duration-ms="42330">
       <class name="com.pkg.runner.GetMerit">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="beforeTest" is-config="true" duration-ms="7606" started-at="2020-01-06T10:33:21Z" finished-at="2020-01-06T10:33:29Z">
+        <test-method is-config="true" signature="beforeTest()[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:55:23Z" name="beforeTest" finished-at="2020-01-08T09:55:38Z" duration-ms="14990" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="getSearchResult" duration-ms="3608" started-at="2020-01-06T10:33:29Z" data-provider="dp" finished-at="2020-01-06T10:33:33Z">
+        <test-method signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:55:38Z" name="getSearchResult" data-provider="dp" finished-at="2020-01-08T09:55:44Z" duration-ms="6390" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -22,7 +22,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchResult -->
-        <test-method status="PASS" signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="getSearchResult" duration-ms="3158" started-at="2020-01-06T10:33:33Z" data-provider="dp" finished-at="2020-01-06T10:33:36Z">
+        <test-method signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:55:44Z" name="getSearchResult" data-provider="dp" finished-at="2020-01-08T09:55:50Z" duration-ms="5486" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchResult -->
-        <test-method status="PASS" signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="getSearchResult" duration-ms="3612" started-at="2020-01-06T10:33:36Z" data-provider="dp" finished-at="2020-01-06T10:33:39Z">
+        <test-method signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:55:50Z" name="getSearchResult" data-provider="dp" finished-at="2020-01-08T09:55:55Z" duration-ms="5481" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -44,7 +44,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchResult -->
-        <test-method status="PASS" signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="getSearchResult" duration-ms="3256" started-at="2020-01-06T10:33:39Z" data-provider="dp" finished-at="2020-01-06T10:33:43Z">
+        <test-method signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:55:55Z" name="getSearchResult" data-provider="dp" finished-at="2020-01-08T09:56:00Z" duration-ms="4927" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -55,7 +55,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchResult -->
-        <test-method status="PASS" signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="getSearchResult" duration-ms="3484" started-at="2020-01-06T10:33:43Z" data-provider="dp" finished-at="2020-01-06T10:33:46Z">
+        <test-method signature="getSearchResult(int)[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:56:00Z" name="getSearchResult" data-provider="dp" finished-at="2020-01-08T09:56:05Z" duration-ms="4793" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -66,11 +66,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getSearchResult -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:com.pkg.runner.GetMerit@42d80b78]" name="afterTest" is-config="true" duration-ms="208" started-at="2020-01-06T10:33:46Z" finished-at="2020-01-06T10:33:46Z">
+        <test-method is-config="true" signature="afterTest()[pri:0, instance:com.pkg.runner.GetMerit@71c8becc]" started-at="2020-01-08T09:56:05Z" name="afterTest" finished-at="2020-01-08T09:56:05Z" duration-ms="200" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- com.pkg.runner.GetMerit -->
-    </test> <!-- Test -->
-  </suite> <!-- Suite -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

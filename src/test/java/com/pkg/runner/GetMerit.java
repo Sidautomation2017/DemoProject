@@ -12,6 +12,8 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.remote.DesiredCapabilities;
+import org.openqa.selenium.remote.RemoteWebDriver;
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
@@ -20,6 +22,7 @@ import org.testng.annotations.Test;
 
 import com.pkg.utility.ExcelReader;
 import com.pkg.utility.FileWritter;
+import java.net.URL;
 
 public class GetMerit {
 	
@@ -27,15 +30,29 @@ public class GetMerit {
 	ArrayList<Integer> userid=new ArrayList<Integer>();
 	static ArrayList<ArrayList<String>> alldataset=new ArrayList<ArrayList<String>>();
 	FileWriter writer;	
-	
+	 public static final String USERNAME = "sidheshwartondar2";
+	  public static final String AUTOMATE_KEY = "n8gZnuYQ4pzhd3Dght4A";
+	  public static final String URL = "https://" + USERNAME + ":" + AUTOMATE_KEY + "@hub-cloud.browserstack.com/wd/hub";
 	
 	@BeforeTest
 	public void beforeTest() throws IOException{
 		ExcelReader ex=new ExcelReader();
 		userid=ex.excelread();
 		writer =FileWritter.writeTextfile();
-		System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+"\\resources\\BrowserDrivers\\chromedriver.exe");
-		driver=new ChromeDriver();
+		 DesiredCapabilities caps = new DesiredCapabilities();
+		    caps.setCapability("browser", "Chrome");
+		    caps.setCapability("browser_version", "78.0");
+		    caps.setCapability("os", "Windows");
+		    caps.setCapability("os_version", "10");
+		    caps.setCapability("resolution", "1024x768");		   
+		    caps.setCapability("project", "Merit_Search");
+		    caps.setCapability("build", "build2");
+		    caps.setCapability("name", "GetMerit");
+		    driver= new RemoteWebDriver(new URL(URL), caps);
+		/*
+		 * System.setProperty("webdriver.chrome.driver", System.getProperty("user.dir")+
+		 * "\\resources\\BrowserDrivers\\chromedriver.exe"); driver=new ChromeDriver();
+		 */
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		driver.get("http://www.jacpcldce.ac.in/Search/BE_Query_18.asp");
